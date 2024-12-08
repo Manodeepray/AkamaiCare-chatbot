@@ -2,6 +2,20 @@
 
 ## lokahi hackathon solution
 
+To download the required libraries
+
+```bash
+pip install -r requirements.txt
+
+```
+
+To run the chatbot itself
+
+```python
+python chatbot.py
+
+```
+
 Running the FastAPI Server
 Run the FastAPI Server: To run the FastAPI app, execute the following command from your project directory:
 
