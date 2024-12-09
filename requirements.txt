@@ -6,3 +6,4 @@ pypdf2
 llama-index-embeddings-gemini
 fastapi
 uvicorn
+python-dotenv
