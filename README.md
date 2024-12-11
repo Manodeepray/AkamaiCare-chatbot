@@ -6,8 +6,6 @@
 
 AkamaiCare is a powerful **chatbot-dashboard hybrid application** designed to assist hospital staff and administrators in accessing patient and hospital databases efficiently. Built using cutting-edge tools like **LlamaIndex**, **QueryAgent**, and **RetrievalAgent**, the app provides an intuitive interface for querying healthcare data, enabling streamlined operations and informed decision-making.
 
-![AkamaiCare Logo](https://path-to-logo.com/logo.png)
-
 ## Features
 
 - **Comprehensive Querying**: Access and retrieve data about patients, services, claims, and providers from hospital databases and PDFs.
