@@ -62,7 +62,7 @@ st.markdown("<h1 class='title'>AkamaiCare Chatbot</h1>", unsafe_allow_html=True)
 if bot_animation:
     st_lottie(bot_animation, height=150, key="bot")
 st.markdown(
-    "<p class='info'>Ask me questions about Hawaiian healthcare: hospitals, care facilities, and more!</p>",
+    "<p class='info'>Effortlessly query Hawaiian healthcare databases and PDFs for detailed information about hospitals, patients, services, claims, and providers!</p>",
     unsafe_allow_html=True,
 )
 
