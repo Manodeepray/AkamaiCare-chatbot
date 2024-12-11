@@ -163,12 +163,17 @@ class PDFRetrievalTool():
 
 
 def create_tools():
-    Claims_Enrollment_truncated_csv_tool = CSVQueryTool("./Claims_Enrollment_truncated.csv" , name = "Claims_Enrollment", description = "patient enrollment csv claim ")
-    Claims_Member_truncated_csv_tool = CSVQueryTool("./Claims_Member_truncated.csv" , name = "Claims_Member" , description = "patient members csv relation")
-    Claims_Provider_truncated_csv_tool = CSVQueryTool("./Claims_Provider_truncated.csv" , name = "Claims_Provider", description = "providers and supplier ")
-    #Claims_Services_truncated_csv_tool = CSVQueryTool("./content/Claims_Services_truncated.csv" , name = "Claims_Service" , description = "")
+    Claims_Enrollment_truncated_csv_tool = CSVQueryTool("Claims_Enrollment_truncated.csv" , name = "Claims_Enrollment", description = "patient enrollment csv claim ")
+    print("Claims_Enrollment_truncated_csv_tool loaded")
+    Claims_Member_truncated_csv_tool = CSVQueryTool("Claims_Member_truncated.csv" , name = "Claims_Member" , description = "patient members csv relation")
+    print("Claims_Member_truncated_csv_tool loaded")
 
-    pdf_engine = PDFRetrievalTool("./pcna2007databook.pdf" ,name = "pdf retrieval tool " , description = "for hawaian medical facilities" ) 
+    Claims_Provider_truncated_csv_tool = CSVQueryTool("Claims_Provider_truncated.csv" , name = "Claims_Provider", description = "providers and supplier ")
+    #Claims_Services_truncated_csv_tool = CSVQueryTool("./content/Claims_Services_truncated.csv" , name = "Claims_Service" , description = "")
+    print("Claims_Provider_truncated_csv_tool loaded")
+
+    pdf_engine = PDFRetrievalTool("pcna2007databook.pdf" ,name = "pdf retrieval tool " , description = "for hawaian medical facilities" ) 
+    print("pdf_engine loaded")
 
     initial_tools=[Claims_Enrollment_truncated_csv_tool,Claims_Member_truncated_csv_tool,Claims_Provider_truncated_csv_tool, pdf_engine]
 
@@ -193,11 +198,11 @@ class combined_agent():
 
 
 initial_tools = create_tools()
-
+print("tools created")
 
     
 combined_agent_tool = combined_agent(initial_tools)
-
+print("tools combined")
 
 
 

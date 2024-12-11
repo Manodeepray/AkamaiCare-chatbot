@@ -1,9 +1,0 @@
-llama-index 
-llama-index-experimental
-llama-index-llms-gemini 
-llama-index
-pypdf2
-llama-index-embeddings-gemini
-fastapi
-uvicorn
-python-dotenv
